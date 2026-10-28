@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: UtopianAcademy.Deckboy
+PackageVersion: 0.99.421
+MinimumOSVersion: 10.0.0.0
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+InstallerSwitches:
+  Custom: /ALLUSERS
+FileExtensions:
+- deckboy
+ProductCode: '{7E2C9F41-6B3D-4E1A-B755-DECB0A0AD001}_is1'
+ReleaseDate: 2026-10-27
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Utopian-Academy/Deckboy/releases/download/v0.99.421/Deckboy-0.99.421-windows-x64-setup.exe
+  InstallerSha256: CC11B8D279E378678D924C69731B69528FDD62D1457E18EB77FA6629D2AA5EBC
+ManifestType: installer
+ManifestVersion: 1.28.0
